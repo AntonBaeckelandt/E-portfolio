@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="{{ asset('/assets/css/normalize.css') }}" />
         <link rel="stylesheet" type="text/css" href="{{ asset('/assets/css/bootstrap.min.css') }}" />
         <link rel="stylesheet" type="text/css" href="{{ asset('/assets/css/custom.css') }}" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     @show
 </head>
 <body>
