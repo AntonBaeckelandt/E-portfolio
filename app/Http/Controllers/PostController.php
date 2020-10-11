@@ -9,8 +9,11 @@ class PostController extends Controller
 {
     
     function showPosts(){
-        $posts = Post::all();
         return view("blog", ["posts" => Post::paginate(3)]);
+    }
+
+    function showPost($id){
+        return view("post", ["post" => Post::where('id', $id)->first()]);
     }
 
 }

@@ -17,7 +17,7 @@
                     <i class="material-icons text-muted">calendar_today</i><h3 class="card-subtitle mb-2 text-muted d-inline ml-2 align-top">Gepost op {{ (new Carbon\Carbon($post->created_at))->toDateString() }}</h3>
                 </div>
                 <p class="card-text mw-25 pr-3">{{ $post->description }}</p>
-                <a href="#" class="btn btn-outline-primary ml-auto mt-auto">Lees meer</a>
+                <a href="{{ route('post', $post->id) }}" class="btn btn-outline-primary ml-auto mt-auto">Lees meer</a>
             </div>
         </article>
     @endforeach
