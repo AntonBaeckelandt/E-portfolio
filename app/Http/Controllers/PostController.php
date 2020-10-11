@@ -10,7 +10,7 @@ class PostController extends Controller
     
     function showPosts(){
         $posts = Post::all();
-        return view("blog", ["posts" => $posts]);
+        return view("blog", ["posts" => Post::paginate(5)]);
     }
 
 }

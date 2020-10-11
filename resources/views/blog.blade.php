@@ -13,4 +13,5 @@
         <h3>Gepost op {{ (new Carbon\Carbon($post->created_at))->toDateString() }}</h3>
         <p>{{ $post->content }}</p>
     @endforeach
+    Current page: {{ $posts->render() }}
 @endsection
