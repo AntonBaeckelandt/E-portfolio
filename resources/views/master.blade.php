@@ -2,27 +2,32 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Anton Baeckelandt - @yield('title')</title>
     @section('head')
         <link rel="stylesheet" type="text/css" href="{{ asset('/assets/css/normalize.css') }}" />
-    @endsection
+        <link rel="stylesheet" type="text/css" href="{{ asset('/assets/css/bootstrap.min.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('/assets/css/custom.css') }}" />
+    @show
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <ul>
+            <ul class="collapse navbar-collapse">
                 <h1 class="navbar-brand">Anton Baeckelandt</h1>
-                <div class="my-2 my-lg-0">
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Over mij...</a></li>
-                    <li><a href="#">CV</a></li>
+                <div class="navbar-nav ml-auto">
+                    <li class="nav-item mr-2"><a class="nav-link" href="{{ route('blog') }}">Blog</a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="#">CV</a></li>
+                    <li class="nav-item mr-2"><a class="nav-link" href="{{ route('about') }}">Over mij...</a></li>
                 </div>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="container">
         @yield('main')
     </main>
+    <footer>
+        <!-- TODO -->
+    </footer>
 </body>
 </html>
