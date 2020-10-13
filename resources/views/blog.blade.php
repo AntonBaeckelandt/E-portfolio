@@ -9,7 +9,7 @@
 @section("main")
     <h1 class="display-3 text-center mb-4">Blog</h1>
     @foreach($posts as $post)
-        <article class="card mb-4 flex-row flex-wrap">
+        <article class="card mb-4 flex-row flex-wrap pt-3 pb-3">
             <img src="/image/posts/{{ $post->image }}" alt="{{ $post->title }}" title="{{ $post->title }}" class="mw-25 w-25 mx-3" />
             <div class="card-body px-2 w-25 ml-4 d-flex flex-column">
                 <h2 class="card-title">{{ $post->title }}</h2>
