@@ -18,6 +18,9 @@ class CreatePostsTable extends Migration
             $table->timestamps();
             $table->string('image')->default('placeholder.png');
             $table->string('title');
+            $table->string('event_name')->nullable();
+            $table->timestamp('event_date')->nullable();
+            $table->string('event_location')->nullable();
             $table->longText('description');
             $table->longText('content');
         });
