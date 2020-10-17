@@ -8,6 +8,14 @@
 
 @section("main")
     <h1 class="display-3 text-center mb-4">{{ $post->title }}</h1>
-    <i class="material-icons text-muted">calendar_today</i><h3 class="card-subtitle mb-2 text-muted d-inline ml-2 align-top">Gepost op {{ (new Carbon\Carbon($post->created_at))->toDateString() }}</h3>
-    {{ $post->content }}
+    <div class="text-center">
+        @if (!empty($post->event_name))
+            <ul class="event-data px-3 mb-3">
+                <li class="d-inline"><span class="material-icons">record_voice_over</span><span class="ml-1 mr-3 align-top">{{ $post->event_name }}</span></li>
+                <li class="d-inline"><span class="material-icons">today</span><span class="ml-1 mr-3 align-top">{{ (new Carbon\Carbon($post->event_date))->toDateString() }}</span></li>
+                <li class="d-inline"><span class="material-icons">place</span><span class="ml-1 mr-3 align-top">{{ $post->event_location }}</span></li>         
+            </ul>
+        @endif
+    </div>
+ {{ $post->content }}
 @endsection
