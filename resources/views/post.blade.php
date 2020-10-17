@@ -17,5 +17,5 @@
             </ul>
         @endif
     </div>
- {{ $post->content }}
+ {!! $post->content !!}
 @endsection
