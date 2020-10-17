@@ -17,23 +17,34 @@
                     <i class="material-icons text-muted">calendar_today</i><h3 class="card-subtitle mb-2 text-muted d-inline ml-2 align-top">Gepost op {{ (new Carbon\Carbon($post->created_at))->toDateString() }}</h3>
                 </div>
                 <p class="card-text mw-25 pr-3">{{ $post->description }}</p>
-                <a href="{{ route('post', $post->id) }}" class="btn btn-outline-primary ml-auto mt-auto">Lees meer</a>
+                <a href="{{ route('post', $post->id) }}" class="btn btn-primary ml-auto mt-auto">Lees meer</a>
             </div>
         </article>
     @endforeach
 
-    <article class="card" style="width: 18rem;">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">Cras justo odio</li>
-            <li class="list-group-item">Dapibus ac facilisis in</li>
-            <li class="list-group-item">Vestibulum at eros</li>
-        </ul>
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </article>
+    <div class="row justify-content-between">
+        @foreach($posts as $post)
+        <article class="card" style="width: 18rem;">
+            <img class="card-img-top px-3" src="/image/posts/{{ $post->image }}" alt="{{ $post->title }}" title="{{ $post->title }}">
+
+            @if (!empty($post->event_name))
+            <ul class="event-data px-3 mb-0">
+                <li class=""><span class="material-icons">record_voice_over</span><span class="ml-2 align-top">{{ $post->event_name }}</span></li>
+                <li class=""><span class="material-icons">today</span><span class="ml-2 align-top">{{ (new Carbon\Carbon($post->event_date))->toDateString() }}</span></li>
+                <li class=""><span class="material-icons">place</span><span class="ml-2 align-top">{{ $post->event_location }}</span></li>         
+            </ul>
+            @endif
+            <div class="card-body pt-2">
+                <h4 class="card-title">{{ $post->title }}</h4>
+                <div>
+                    <i class="material-icons text-muted">calendar_today</i><h6 class="card-subtitle mb-2 text-muted d-inline ml-2 align-top">Gepost op {{ (new Carbon\Carbon($post->created_at))->toDateString() }}</h6>
+                </div>
+                <p class="card-text">{{ $post->description }}</p>
+            </div>
+            <a href="{{ route('post', $post->id) }}" class="btn btn-primary mt-auto ml-auto mr-auto mb-2">Lees meer</a>
+        </article>
+        @endforeach
+    </div>
+  
     {{ $posts->render() }}
 @endsection
