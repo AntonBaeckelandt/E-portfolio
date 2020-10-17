@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
             <div class="collapse navbar-collapse">
                 <a href="{{ route('posts') }}"><h1 class="navbar-brand">Anton Baeckelandt</h1></a>
                 <ul class="navbar-nav ml-auto">
