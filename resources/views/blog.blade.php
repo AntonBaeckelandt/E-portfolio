@@ -11,14 +11,14 @@
     <div class="row justify-content-between mb-3">
         @foreach($posts as $post)
         <article class="card" style="width: 18rem;">
-            <div class="card-header">
+            <div class="card-header d-flex flex-column justify-content-between">
                 <img class="card-img-top px-3 mb-3" src="/image/posts/{{ $post->image }}" alt="{{ $post->title }}" title="{{ $post->title }}">
 
                 @if (!empty($post->event_name))
                 <ul class="event-data px-0 mb-0">
                     <li class="mb-2"><span class="material-icons">record_voice_over</span><span class="ml-2 align-top">{{ $post->event_name }}</span></li>
                     <li class="mb-2"><span class="material-icons">today</span><span class="ml-2 align-top">{{ (new Carbon\Carbon($post->event_date))->toDateString() }}</span></li>
-                    <li class="mb-2"><span class="material-icons">place</span><span class="ml-2 align-top">{{ $post->event_location }}</span></li>
+                    <li class="mb-0"><span class="material-icons">place</span><span class="ml-2 align-top">{{ $post->event_location }}</span></li>
                 </ul>
                 @endif
             </div>
@@ -29,7 +29,7 @@
                 </div>
                 <p class="card-text">{{ $post->description }}</p>
             </div>
-            <a href="{{ route('post', $post->id) }}" class="btn btn-primary mt-auto ml-auto mr-auto mb-2">Lees meer</a>
+            <a href="{{ route('post', $post->id) }}" class="btn btn-success mt-auto ml-auto mr-auto mb-2">Lees meer</a>
         </article>
         @endforeach
     </div>
