@@ -7,9 +7,9 @@ use App\Models\Post;
 
 class PostController extends Controller
 {
-    
+
     function showPosts(){
-        return view("blog", ["posts" => Post::paginate(3)]);
+        return view("blog", ["posts" => Post::orderBy('created_at', 'desc')->paginate(3)]);
     }
 
     function showPost($id){
