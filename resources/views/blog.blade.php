@@ -12,13 +12,13 @@
         @foreach($posts as $post)
         <article class="card" style="width: 18rem;">
             <div class="card-header">
-                <img class="card-img-top px-3" src="/image/posts/{{ $post->image }}" alt="{{ $post->title }}" title="{{ $post->title }}">
+                <img class="card-img-top px-3 mb-3" src="/image/posts/{{ $post->image }}" alt="{{ $post->title }}" title="{{ $post->title }}">
 
                 @if (!empty($post->event_name))
-                <ul class="event-data px-3 mb-0">
-                    <li><span class="material-icons">record_voice_over</span><span class="ml-2 align-top">{{ $post->event_name }}</span></li>
-                    <li><span class="material-icons">today</span><span class="ml-2 align-top">{{ (new Carbon\Carbon($post->event_date))->toDateString() }}</span></li>
-                    <li><span class="material-icons">place</span><span class="ml-2 align-top">{{ $post->event_location }}</span></li>         
+                <ul class="event-data px-0 mb-0">
+                    <li class="mb-2"><span class="material-icons">record_voice_over</span><span class="ml-2 align-top">{{ $post->event_name }}</span></li>
+                    <li class="mb-2"><span class="material-icons">today</span><span class="ml-2 align-top">{{ (new Carbon\Carbon($post->event_date))->toDateString() }}</span></li>
+                    <li class="mb-2"><span class="material-icons">place</span><span class="ml-2 align-top">{{ $post->event_location }}</span></li>
                 </ul>
                 @endif
             </div>
