@@ -14,8 +14,9 @@
 
 .page-item.active .page-link {
     background-color: rgb(40, 167, 69);
-    border-color: green;
+    border-color: rgb(45, 188, 76);
 }
+
 .pagination > li > a,
 .pagination > li > span {
     color: #6c757d;
@@ -28,5 +29,5 @@
 .pagination > .active > span:focus,
 .pagination > .active > span:hover {
     background-color: green;
-    border-color: green;
+    border-color: rgb(45, 188, 76);
 }
