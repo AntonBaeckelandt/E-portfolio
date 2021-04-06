@@ -10,7 +10,7 @@
     <h1 class="display-3 text-center mb-4">Blog</h1>
     <div class="row justify-content-between mb-3">
         @foreach($posts as $post)
-        <article class="card" style="width: 18rem;">
+        <article class="card mb-3">
             <div class="card-header d-flex flex-column justify-content-between">
                 <img class="card-img-top px-3 mb-3" src="/image/posts/{{ $post->image }}" alt="{{ $post->title }}" title="{{ $post->title }}">
 

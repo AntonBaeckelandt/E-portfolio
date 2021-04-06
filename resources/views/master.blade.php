@@ -31,7 +31,7 @@
     <main class="container">
         @yield('main')
     </main>
-    <footer class="bg-secondary text-center text-white fixed-bottom">
+    <footer class="bg-secondary text-center text-white">
         <div class="container p-2 pt-4">
             <section class="mb-2">
                 <a class="btn btn-outline-light btn-floating m-1"

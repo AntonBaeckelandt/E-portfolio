@@ -8,6 +8,10 @@
     margin-right: auto;
 }
 
+.card {
+    width: 18rem;
+}
+
 .card-header {
     height: 350px;
 }
@@ -30,4 +34,15 @@
 .pagination > .active > span:hover {
     background-color: green;
     border-color: rgb(45, 188, 76);
+}
+
+main {
+    min-height: 78vh;
+}
+
+@media (max-width: 768px) {
+    .card {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
