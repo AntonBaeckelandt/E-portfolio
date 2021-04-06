@@ -12,6 +12,10 @@
     width: 18rem;
 }
 
+.card img {
+    max-height: 65%;
+}
+
 .card-header {
     height: 350px;
 }
