@@ -20,6 +20,11 @@
     height: 350px;
 }
 
+.bd-highlight {
+    background-color: rgba(86,61,124,0.15);
+    border: 1px solid rgba(86,61,124,0.15);
+}
+
 .page-item.active .page-link {
     background-color: rgb(40, 167, 69);
     border-color: rgb(45, 188, 76);
