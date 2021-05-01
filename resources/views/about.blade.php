@@ -8,24 +8,40 @@
             <h1 class="display-3 mb-4">Over mij</h1>
             <img src="/image/antonbaeckelandt.jpg" alt="Foto Anton Baeckelandt" title="Anton Baeckelandt"
                  id="profilepicture" class="img-thumbnail rounded float-right w-25 ml-3"/>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Hac habitasse platea dictumst vestibulum. Eget est lorem ipsum dolor sit amet
-                consectetur adipiscing. Nam libero justo laoreet sit. Egestas sed sed risus pretium quam vulputate
-                dignissim suspendisse. Quis eleifend quam adipiscing vitae proin sagittis nisl. Ultrices neque ornare
-                aenean euismod elementum nisi. Malesuada proin libero nunc consequat interdum. Eu volutpat odio
-                facilisis mauris sit. Elit sed vulputate mi sit amet mauris commodo quis. Egestas purus viverra accumsan
-                in nisl nisi scelerisque eu ultrices. Volutpat sed cras ornare arcu dui vivamus. Nulla facilisi morbi
-                tempus iaculis urna id volutpat lacus laoreet. Metus aliquam eleifend mi in. Non quam lacus suspendisse
-                faucibus interdum posuere lorem. Nisi porta lorem mollis aliquam ut porttitor. Fringilla phasellus
-                faucibus scelerisque eleifend. Fermentum et sollicitudin ac orci phasellus egestas tellus. At varius vel
-                pharetra vel turpis nunc eget lorem dolor.
+            <p class="mb-5">
+                Deze blog en artikels werden geschreven door mezelf, Anton Baeckelandt.
+                <br/>
+                <br/>
+                In 2018 ben ik gestart met de opleiding Toegepaste Informatica aan Howest campus Brugge.
+                Ondertussen zijn we drie jaar verder en zal ik in juni dit jaar afstuderen in de afstudeerrichting
+                Software Engineer.
+                <br/>
+                <br/>
+                Zoals de afstudeerrichting doet vermoeden, ben ik vooral geïnteresseerd in programmeren.
+                Ik werk graag in zowel de front- als de back-end, maar ik heb toch een lichte voorkeur voor back-end
+                development.
+                <br/>
+                <br/>
+                Tijdens mijn laatste jaar in de opleiding kon ik mijn passie voor programmeren uitgebreid uitoefenen tijdens mijn gevarieerde stage bij <a href="https://www.duo.be/nl" target="_blank">Duo</a> in het app-team.
+            </p>
+            <h3 class="">Contacteer mij</h3>
+            <ul class="list-unstyled">
+                <li class="mb-1"><a class="btn btn-floating m-1"
+                       href="https://www.linkedin.com/in/anton-baeckelandt/"
+                       role="button"
+                       target="_blank">
+                        <i class="bi bi-linkedin mr-2"></i>
+                        LinkedIn
+                    </a></li>
 
-                Ultrices eros in cursus turpis massa tincidunt dui ut ornare. Senectus et netus et malesuada fames. Eget
-                dolor morbi non arcu risus quis varius quam quisque. Sit amet commodo nulla facilisi nullam. Ac tortor
-                vitae purus faucibus ornare suspendisse sed nisi lacus. Cras pulvinar mattis nunc sed blandit libero. Id
-                eu nisl nunc mi ipsum faucibus vitae aliquet nec. Pretium vulputate sapien nec sagittis aliquam
-                malesuada bibendum. Mattis vulputate enim nulla aliquet porttitor lacus luctus. Non quam lacus
-                suspendisse faucibus interdum posuere lorem.</p>
+                <li><a class="btn btn-floating m-1"
+                       href="https://github.com/AntonBaeckelandt/"
+                       role="button"
+                       target="_blank">
+                        <i class="bi bi-github mr-2"></i>
+                        Github
+                    </a></li>
+            </ul>
         </div>
     </div>
 @endsection
