@@ -12,7 +12,7 @@
         @foreach($posts as $post)
         <article class="card mb-3">
             <div class="card-header">
-                <h4 class="card-title h3 mb-3">{{ $post->title }}</h4>
+                <h4 class="card-title h3 mb-3"><a href="{{ route('post', $post->id) }}" class="text-dark">{{ $post->title }}</a></h4>
                 <div>
                     <i class="material-icons text-muted h6">calendar_today</i><h5 class="h6 card-subtitle mb-2 text-muted d-inline ml-2 align-top">Gepost op {{ (new Carbon\Carbon($post->created_at))->toDateString() }}</h5>
                 </div>
