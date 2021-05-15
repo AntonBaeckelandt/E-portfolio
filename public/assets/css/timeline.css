@@ -54,7 +54,7 @@
     position: absolute
 }
 
-.cbp_tmtimeline > li .cbp_tmtime span {
+.cbp_tmtimeline > li .cbp_tmtime {
     display: block;
     text-align: right
 }
@@ -172,7 +172,7 @@
         padding: 0 0 20px 0
     }
 
-    .cbp_tmtimeline > li .cbp_tmtime span {
+    .cbp_tmtimeline > li .cbp_tmtime {
         text-align: left
     }
 

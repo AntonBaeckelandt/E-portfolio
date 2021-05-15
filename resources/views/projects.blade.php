@@ -15,7 +15,7 @@
             <div class="col-md-10">
                 <ul class="cbp_tmtimeline">
                     <li>
-                        <h4 class="text-right d-block">
+                        <h4 class="d-block">
                             <time class="cbp_tmtime" datetime="2020">2020</time>
                         </h4>
                         <div class="cbp_tmicon bg-info"><span class="material-icons">web_asset</span></div>
@@ -26,13 +26,13 @@
                                 <li class="list-inline-item font-weight-light">Datomic</li>
                             </ul>
                             <p class="description">
-                                De Mars Transaction Server was een van de deployables in een groter geheel dat ficitef toeliet om huizen op Mars te managen.
+                                De Mars Transaction Server was een van de deployables in een groter geheel dat toeliet om fictieve huizen op Mars te managen.
                                 Deze server had de taak om data over de aan- en verkopen van huizen bij te houden. Als servertechnologie werd er gekozen voor Spring boot. Datomic werd gebruikt om de transacties op te slaan.
                             </p>
                         </div>
                     </li>
                     <li>
-                        <h4 class="text-right d-block">
+                        <h4 class="d-block">
                             <time class="cbp_tmtime" datetime="2020">2020</time>
                         </h4>
                         <div class="cbp_tmicon bg-info"><span class="material-icons">web_asset</span></div>
@@ -52,7 +52,7 @@
                         </div>
                     </li>
                     <li>
-                        <h4 class="text-right d-block">
+                        <h4 class="d-block">
                             <time class="cbp_tmtime" datetime="2020">2020</time>
                         </h4>
                         <div class="cbp_tmicon bg-info"><span class="material-icons">web_asset</span></div>
@@ -70,7 +70,7 @@
                         </div>
                     </li>
                     <li>
-                        <h4 class="text-right d-block">
+                        <h4 class="d-block">
                             <time class="cbp_tmtime" datetime="2020">2020</time>
                         </h4>
                         <div class="cbp_tmicon bg-info"><span class="material-icons">web_asset</span></div>
@@ -92,7 +92,7 @@
                         </div>
                     </li>
                     <li>
-                        <h4 class="text-right d-block">
+                        <h4 class="d-block">
                             <time class="cbp_tmtime" datetime="2020">2020</time>
                         </h4>
                         <div class="cbp_tmicon bg-info"><span class="material-icons">web_asset</span></div>
@@ -112,7 +112,7 @@
                         </div>
                     </li>
                     <li>
-                        <h4 class="text-right d-block">
+                        <h4 class="d-block">
                             <time class="cbp_tmtime" datetime="2019">2019</time>
                         </h4>
                         <div class="cbp_tmicon bg-orange"><span class="material-icons">web_asset</span></div>
@@ -133,13 +133,12 @@
                                 Een voorbeeld hiervan was het tijdelijk vertragen van de bal.
                                 Power-downs kunnen naar uw tegenstanders verstuurd worden en maken het spel moeilijker
                                 voor hen. <br/>
-                                Het real-time aspect van het spel had mogelijk geweest zonder het gebruik van
-                                websockets.
+                                Websockets zorgden voor het real-time aspect van het spel.
                             </p>
                         </div>
                     </li>
                     <li>
-                        <h4 class="text-right d-block">
+                        <h4 class="d-block">
                             <time class="cbp_tmtime" datetime="2019">2019</time>
                         </h4>
                         <div class="cbp_tmicon bg-orange"><span class="material-icons">web_asset</span></div>
