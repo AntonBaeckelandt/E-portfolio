@@ -15,6 +15,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', "App\Http\Controllers\PostController@showPosts") -> name("posts");
 Route::get('/posts/{id}', "App\Http\Controllers\PostController@showPost") -> where('id', '[0-9]+') -> name("post");
+
 Route::get('/about', function(){
     return view("about");
 }) -> name("about");
+
+Route::get('/projects', function(){
+    return view("projects");
+}) -> name("projects");

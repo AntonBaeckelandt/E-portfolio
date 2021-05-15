@@ -32,6 +32,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item mr-2"><a class="nav-link" href="{{ route('posts') }}">Blog</a></li>
+                <li class="nav-item mr-2"><a class="nav-link" href="{{ route('projects') }}">Projecten</a></li>
                 <li class="nav-item mr-2"><a class="nav-link" href="{{ route('about') }}">Over mij</a></li>
             </ul>
         </div>
